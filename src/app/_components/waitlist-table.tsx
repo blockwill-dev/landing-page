@@ -40,7 +40,7 @@ export function WaitlistTable() {
     limit: 100,
   });
   const { data: count } = api.waitlist.getCount.useQuery();
-  
+
   const columns: ColumnDef<WaitlistEntry, any>[] = [
     {
       accessorKey: "id",
